@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1q7tvb6asg7j"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/Screens/Menu.cs" id="1_lyvyh"]
+[ext_resource type="PackedScene" uid="uid://c77y6di1jqcfj" path="res://Camera.tscn" id="2_0tfgt"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_lyvyh")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 224.0
+offset_top = 164.0
+offset_right = 416.0
+offset_bottom = 196.0
+text = "Play
+"
+
+[node name="camera" parent="." instance=ExtResource("2_0tfgt")]
+position = Vector2(320, 180)
+
+[connection signal="pressed" from="Play" to="." method="_OnPlayPressed"]

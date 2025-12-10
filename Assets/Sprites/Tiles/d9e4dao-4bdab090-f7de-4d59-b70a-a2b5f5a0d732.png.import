@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgc0f5rwdf31q"
-path="res://.godot/imported/d9e4dao-4bdab090-f7de-4d59-b70a-a2b5f5a0d732.png-025041b4a0a7c00ee1c2932538841b7d.ctex"
+path="res://.godot/imported/d9e4dao-4bdab090-f7de-4d59-b70a-a2b5f5a0d732.png-c05863137269662d675269e9bf4c1adb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://d9e4dao-4bdab090-f7de-4d59-b70a-a2b5f5a0d732.png"
-dest_files=["res://.godot/imported/d9e4dao-4bdab090-f7de-4d59-b70a-a2b5f5a0d732.png-025041b4a0a7c00ee1c2932538841b7d.ctex"]
+source_file="res://Assets/Sprites/Tiles/d9e4dao-4bdab090-f7de-4d59-b70a-a2b5f5a0d732.png"
+dest_files=["res://.godot/imported/d9e4dao-4bdab090-f7de-4d59-b70a-a2b5f5a0d732.png-c05863137269662d675269e9bf4c1adb.ctex"]
 
 [params]
 
