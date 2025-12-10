@@ -1,0 +1,17 @@
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\bin\Debug\UndertaleBattle.deps.json
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\bin\Debug\UndertaleBattle.runtimeconfig.json
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\bin\Debug\UndertaleBattle.dll
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\bin\Debug\UndertaleBattle.pdb
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.csproj.AssemblyReference.cache
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.AssemblyInfoInputs.cache
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.AssemblyInfo.cs
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.csproj.CoreCompileInputs.cache
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\Undertal.BD82219C.Up2Date
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.dll
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\refint\UndertaleBattle.dll
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.pdb
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\UndertaleBattle.genruntimeconfig.cache
+C:\Users\katona.gergo\Documents\UndertaleBattle-main\UndertaleBattle-main\.godot\mono\temp\obj\Debug\ref\UndertaleBattle.dll
