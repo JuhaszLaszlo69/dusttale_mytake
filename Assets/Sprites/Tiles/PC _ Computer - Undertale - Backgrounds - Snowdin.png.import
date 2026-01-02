@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgiewq6am86ut"
-path="res://.godot/imported/Undertale_yellow_soul.svg.png-381801e759e425de3e156d3826d1b5b8.ctex"
+uid="uid://b6yelbrt286y0"
+path="res://.godot/imported/PC _ Computer - Undertale - Backgrounds - Snowdin.png-5e65f6e6f1d12504cedc79644187e017.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Undertale_yellow_soul.svg.png"
-dest_files=["res://.godot/imported/Undertale_yellow_soul.svg.png-381801e759e425de3e156d3826d1b5b8.ctex"]
+source_file="res://Assets/Sprites/Tiles/PC _ Computer - Undertale - Backgrounds - Snowdin.png"
+dest_files=["res://.godot/imported/PC _ Computer - Undertale - Backgrounds - Snowdin.png-5e65f6e6f1d12504cedc79644187e017.ctex"]
 
 [params]
 
