@@ -44,6 +44,7 @@ offset_right = -52.025
 offset_bottom = -18.0
 text = "Press Enter"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="colisiones" type="StaticBody2D" parent="."]
 
@@ -83,4 +84,4 @@ polygon = PackedVector2Array(39, 96, 38, 458, 310, 460, 310, 479, 401, 480, 401,
 [node name="Objetos" type="Node2D" parent="."]
 
 [node name="Jugador" parent="Objetos" instance=ExtResource("3")]
-position = Vector2(153.477, 199.816)
+position = Vector2(106, 114)

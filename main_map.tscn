@@ -1,9 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://xf577qou5u3"]
+[gd_scene load_steps=18 format=3 uid="uid://xf577qou5u3"]
 
 [ext_resource type="PackedScene" path="res://player/Jugador.tscn" id="1"]
 [ext_resource type="Script" uid="uid://dhreiuljtydj4" path="res://main_map.gd" id="2"]
-[ext_resource type="TileSet" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_floors.tres" id="3"]
-[ext_resource type="TileSet" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_walls.tres" id="4"]
+[ext_resource type="TileSet" uid="uid://ipyeg1txoqs7" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_floors.tres" id="3"]
+[ext_resource type="TileSet" uid="uid://dremlqr0s3613" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_walls.tres" id="4"]
 [ext_resource type="Script" uid="uid://btrkmf3766bkl" path="res://battle_zone.gd" id="5"]
 [ext_resource type="PackedScene" uid="uid://b63wldbutwctw" path="res://enemy_data/cherry.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://bkavs6k60jki1" path="res://enemy_data/poseur.tscn" id="7"]
@@ -13,9 +13,14 @@
 [ext_resource type="Texture2D" uid="uid://d2lq1qmoxglbe" path="res://sprites/CherryCharacter.png" id="11_t3ofs"]
 [ext_resource type="Texture2D" uid="uid://bhdrd0gjpota6" path="res://sprites/Poseur.png" id="12_dt6kx"]
 [ext_resource type="Texture2D" uid="uid://0a5r6gpx5knj" path="res://sprites/godot_logo_transparent.png" id="13_dt6kx"]
+[ext_resource type="AudioStream" uid="uid://cuv0vc82tyi51" path="res://addons/SMRT/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3" id="14_i4yi8"]
+[ext_resource type="Script" uid="uid://dkl8x52vloajk" path="res://door2.gd" id="15_1k36j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(100, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4yi8"]
+size = Vector2(26, 38)
 
 [node name="MainMap" type="Node2D"]
 script = ExtResource("2")
@@ -103,3 +108,14 @@ texture = ExtResource("12_dt6kx")
 position = Vector2(600, 706)
 scale = Vector2(0.211225, 0.211225)
 texture = ExtResource("13_dt6kx")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_i4yi8")
+autoplay = true
+
+[node name="Door" type="Area2D" parent="."]
+script = ExtResource("15_1k36j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(318, 353)
+shape = SubResource("RectangleShape2D_i4yi8")

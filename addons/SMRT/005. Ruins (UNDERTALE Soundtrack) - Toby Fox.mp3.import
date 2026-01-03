@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cuv0vc82tyi51"
+path="res://.godot/imported/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3-45487e11a9b7074b2614ec2f594cebe3.mp3str"
+
+[deps]
+
+source_file="res://addons/SMRT/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3"
+dest_files=["res://.godot/imported/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3-45487e11a9b7074b2614ec2f594cebe3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
