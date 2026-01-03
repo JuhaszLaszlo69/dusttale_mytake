@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://dq3iqi047woc0"]
+
+[ext_resource type="PackedScene" path="res://player/Jugador.tscn" id="1"]
+
+[sub_resource type="GDScript" id="GDScript_6jwp1"]
+script/source = "extends Node2D
+
+@export var default_enemy: PackedScene
+
+func _ready():
+	# Connect battle trigger
+	var battle_trigger = $BattleTrigger
+	if battle_trigger:
+		battle_trigger.body_entered.connect(_on_battle_trigger_entered)
+
+func _on_battle_trigger_entered(body):
+	if body.name == \"Jugador\" or body.name == \"Player\":
+		start_battle()
+
+func start_battle(enemy_scene: PackedScene = null):
+	if enemy_scene == null:
+		enemy_scene = default_enemy
+	if enemy_scene == null:
+		# Default to first enemy if none specified
+		enemy_scene = preload(\"res://enemy_data/cherry.tscn\")
+	
+	# Load enemy and start battle
+	var enemy_instance = enemy_scene.instantiate()
+	if enemy_instance and enemy_instance.has_method(\"get\") and enemy_instance.get(\"enemy_name\"):
+		Battle.enemy = enemy_instance
+		Fade.fade_into_black()
+		await Fade.fade_into_black()
+		# Use the UID from the battle scene
+		get_tree().change_scene_to_file(\"uid://45qmet5s5aix\")
+
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(1280, 960)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
+size = Vector2(100, 100)
+
+[node name="Overworld" type="Node2D"]
+script = SubResource("GDScript_6jwp1")
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Map"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.2, 0.3, 1)
+
+[node name="Collisions" type="StaticBody2D" parent="Map"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Collisions"]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="Player" parent="." instance=ExtResource("1")]
+position = Vector2(320, 180)
+
+[node name="BattleTrigger" type="Area2D" parent="."]
+position = Vector2(500, 180)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BattleTrigger"]
+shape = SubResource("RectangleShape2D_2")
+
+[node name="Label" type="Label" parent="BattleTrigger"]
+offset_left = -50.0
+offset_top = -20.0
+offset_right = 50.0
+offset_bottom = 20.0
+text = "Battle Zone"
+horizontal_alignment = 1
