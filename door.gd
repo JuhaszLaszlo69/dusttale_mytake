@@ -32,17 +32,9 @@ func show_interaction_prompt():
 	pass
 
 func enter_door():
-	# Get reference to the node with open_door()
-	var main_node = get_node("DoorSFX")
-	print("Main node: ", main_node)
-	# Call the function
-	if main_node != null:
-		await main_node.open_door()
-	else:
-		print("ERROR: could not find node with open_door()!")
-
-	# Change scene after sound + fade
 	if target_scene != "":
+		Fade.fade_into_black()
+		await Fade.fade_into_black()
 		get_tree().change_scene_to_file(target_scene)
 	else:
-		get_tree().change_scene_to_file("res://main_map.tscn")
+		get_tree().change_scene_to_file("res://maps/main_map.tscn")

@@ -3,7 +3,6 @@ extends CanvasLayer
 signal fade_finished
 
 @onready var anim: AnimationPlayer = $AnimationPlayer
-@onready var door_sfx: AudioStreamPlayer = $DoorSFX
 
 func fade_into_black(duration: float = 1) -> void:
 	anim.play("to_black")

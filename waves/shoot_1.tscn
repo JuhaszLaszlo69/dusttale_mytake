@@ -28,7 +28,7 @@ offset_right = 410.0
 offset_bottom = 103.0
 theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
-text = "Press Z to shoot"
+text = "Press Spacebar to shoot"
 horizontal_alignment = 1
 vertical_alignment = 1
 

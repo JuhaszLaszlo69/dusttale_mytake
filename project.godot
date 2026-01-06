@@ -19,11 +19,6 @@ config/icon="res://icon.svg"
 
 Global="*res://autoloads/global.gd"
 Fade="*res://autoloads/fade_to_black.tscn"
-signalManager="*res://autoloads_extra/signalManager.gd"
-MusicController="*res://autoloads_extra/MusicController.tscn"
-SceneChanger="*res://autoloads_extra/SceneChanger.tscn"
-globalVariables="*res://autoloads_extra/globalVariables.gd"
-itemLibrary="*res://autoloads_extra/itemLibrary.gd"
 
 [display]
 

@@ -40,4 +40,4 @@ func enter_door():
         # Exit to main map
         Fade.fade_into_black()
         await Fade.fade_into_black()
-        get_tree().change_scene_to_file("res://overworld_original.tscn")
+        get_tree().change_scene_to_file("res://maps/overworld_original.tscn")

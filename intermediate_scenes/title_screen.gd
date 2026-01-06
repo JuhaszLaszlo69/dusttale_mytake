@@ -42,7 +42,7 @@ func go_to_overworld() -> void:
 	await Fade.fade_into_black()
 	
 	# Try loading the scene first to check if it exists
-	var scene = load("res://overworld_original.tscn")
+	var scene = load("res://maps/overworld_original.tscn")
 	if scene == null:
 		print("ERROR: Could not load overworld_original.tscn")
 		# Try alternative
@@ -51,7 +51,7 @@ func go_to_overworld() -> void:
 			print("ERROR: Could not load overworld.tscn either!")
 			return
 	
-	var error = get_tree().change_scene_to_file("res://overworld_original.tscn")
+	var error = get_tree().change_scene_to_file("res://maps/overworld_original.tscn")
 	if error != OK:
 		print("Error changing scene: ", error)
 		print("Error code: ", error)
