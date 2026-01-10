@@ -8,7 +8,7 @@
 [node name="Cherry" type="Node"]
 script = ExtResource("1_o5bg2")
 enemy_name = "Cherry"
-HP = 150
+HP = 1000
 sprite = ExtResource("2_ihon8")
 sprite_scale = 1.5
 acts = Array[String](["Check", "Cheer", "Football"])

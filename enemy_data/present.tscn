@@ -9,7 +9,7 @@
 [node name="Present" type="Node"]
 script = ExtResource("1_kvdy5")
 enemy_name = "Present"
-HP = 150
+HP = 1000
 sprite = ExtResource("2_otxd1")
 acts = Array[String](["Check", "Gift", "Peek", "Wait"])
 bullet_waves = Array[PackedScene]([ExtResource("3_244bd"), ExtResource("3_perkx"), ExtResource("3_my634")])
