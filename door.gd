@@ -35,6 +35,8 @@ func enter_door():
 	if target_scene != "":
 		Fade.fade_into_black()
 		await Fade.fade_into_black()
-		get_tree().change_scene_to_file(target_scene)
+		if is_inside_tree() and get_tree():
+			get_tree().change_scene_to_file(target_scene)
 	else:
-		get_tree().change_scene_to_file("res://maps/main_map.tscn")
+		if is_inside_tree() and get_tree():
+			get_tree().change_scene_to_file("res://maps/main_map.tscn")

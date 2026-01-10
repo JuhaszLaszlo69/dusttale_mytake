@@ -1,17 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1767707038
-battle_zone.gd::GDScript/GDScript::-1::1767704752::0::1::::<>Area2D<><>0<>0<><>::
+::res://::1768046892
+battle_zone.gd::GDScript::3755732041457110219::1768046859::0::1::::<>Area2D<><>0<>0<><>::
 door2.gd::GDScript/GDScript::7885904995155008188::1767705440::0::1::::<>Area2D<><>0<>0<><>::
 door.gd::GDScript/GDScript::378376780463570344::1767706776::0::1::::<>Area2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::33692468834130785::1767468898::1767706364::1::::<><><>0<>0<>b5445510c3fad6a123a62447089f9a8b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+shop_entrance.gd::GDScript::3411167529401887046::1768046859::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Assets/::1767706412
 ::res://Assets/Resources/::1767706295
 ::res://Assets/Resources/TileSets/::1767110670
 WindowBorder.tres::TileSet/TileSet::6085998915231827938::1767468900::0::1::::<><><>0<>0<><>::uid://c13q6xhl3olns::::res://Assets/Sprites/Tiles/window_border.png
-::res://Assets/Resources/TileSets/Large Labyrinth/::1767706496
-large_labyrinth_floors.tres::TileSet/TileSet::593941122616764292::1767706496::0::1::::<><><>0<>0<><>::uid://dpypyeq5m4bna::::res://Assets/Sprites/Tiles/large_labyrinth.png
+::res://Assets/Resources/TileSets/Large Labyrinth/::1767707118
+large_labyrinth_floors.tres::TileSet/TileSet::593941122616764292::1767707118::0::1::::<><><>0<>0<><>::uid://dpypyeq5m4bna::::res://Assets/Sprites/Tiles/large_labyrinth.png
 large_labyrinth_invisible_walls.tres::TileSet/TileSet::4690909199558291116::1767468901::0::1::::<><><>0<>0<><>::uid://dpypyeq5m4bna::::res://Assets/Sprites/Tiles/large_labyrinth.png
-large_labyrinth_walls.tres::TileSet/TileSet::8361479019384598508::1767706496::0::1::::<><><>0<>0<><>::uid://dpypyeq5m4bna::::res://Assets/Sprites/Tiles/large_labyrinth.png
+large_labyrinth_walls.tres::TileSet/TileSet::8361479019384598508::1767707118::0::1::::<><><>0<>0<><>::uid://dpypyeq5m4bna::::res://Assets/Sprites/Tiles/large_labyrinth.png
 ::res://Assets/Sprites/::1767706412
 ::res://Assets/Sprites/Tiles/::1767706415
 39b1d6da5be4af08c5f6104a61035664.jpg::CompressedTexture2D/CompressedTexture2D::1288999217428032276::1767468901::1767706414::1::::<><><>0<>0<>36e80c3f05c7346b73562f30157901ab<>res://.godot/imported/39b1d6da5be4af08c5f6104a61035664.jpg-98eaf8c82fa1a45ec88f30a9f4da2a6e.ctex::
@@ -22,9 +23,9 @@ window_border.png::CompressedTexture2D/CompressedTexture2D::6656581929972487752:
 ::res://autoloads/::1767702660
 fade_to_black.gd::GDScript/GDScript::3038079581242937541::1767706696::0::1::::<>CanvasLayer<><>0<>0<><>::
 fade_to_black.tscn::PackedScene/PackedScene::1137369538193666015::1767702660::0::1::::<><><>0<>0<><>::uid://bjjwyyhqta574::::res://autoloads/fade_to_black.gd
-global.gd::GDScript/GDScript::5778197873238288096::1767468901::0::1::::<>Node<><>0<>0<><>::
+global.gd::GDScript::5778197873238288096::1768046859::0::1::::<>Node<><>0<>0<><>::
 ::res://battle/::1767463254
-battle.gd::GDScript/GDScript::6944745281352114466::1767468901::0::1::::Battle<>Node2D<><>0<>0<><>::
+battle.gd::GDScript::6944745281352114466::1768046859::0::1::::Battle<>Node2D<><>0<>0<><>::
 battle.tscn::PackedScene/PackedScene::2098400940368835255::1767468957::0::1::::<><><>0<>0<><>::uid://c57c672oeb8vm::::res://battle/battle.gd<>uid://c52ed72xkdnj2::::res://items/item.gd<>uid://cdwpd7gdg4qdj::::res://items/pie.tres<>uid://bsdludjyf4ury::::res://themes/undertale-damage.otf<>uid://csj3basn1h8wt::::res://items/apple.tres<>uid://buheun3jb126i::::res://items/nice_cream.tres<>uid://byp2svo436sh6::::res://sounds/snd_select.wav<>uid://budfuioj3f6wu::::res://sprites/Undertale.png<>uid://bg6fcjorkrh23::::res://sounds/snd_squeak.wav<>uid://cowlpeawlvafn::::res://text_box/text_box.tscn<>uid://dhbvccgm7a5sj::::res://sounds/snd_hurt1.wav<>uid://8uape5wkyje4::::res://sounds/snd_laz.wav<>uid://cedvngba5pql2::::res://text_box/monster_text_box.tscn<>uid://bo5dxmxjbqcuc::::res://sounds/snd_heal_c.wav<>uid://61kg45th28eb::::res://themes/DTM-Mono.otf<>uid://dcghcrt5bpk2p::::res://sprites/stab/spr_slice_o_0.png<>uid://cxoa4407vpjc4::::res://sounds/Undertale Sound - Monster Dust.mp3<>uid://ckuqxua4m57lc::::res://sprites/stab/spr_slice_o_1.png<>uid://cnunm8axqgv8s::::res://sounds/snd_break2.wav<>uid://dj70g88kuxjlc::::res://sprites/stab/spr_slice_o_2.png<>uid://7fb0mq50gkc2::::res://sprites/stab/spr_slice_o_3.png<>uid://vypbmv8oyr11::::res://sprites/stab/spr_slice_o_4.png<>uid://il3waeawr7kr::::res://sprites/stab/spr_slice_o_5.png<>uid://qg7ksrbtkou6::::res://autoloads/fade_to_black.tscn<>uid://qmi8o2j171cs::::res://sprites/bg.png<>uid://byrdnb2dtwnud::::res://sounds/Undertale Sound Effect - Attack Hit 4.mp3<>uid://xandhxe1l75f::::res://sounds/Yellow SOUL shoot.wav
 monster_dialouge.gd::GDScript/GDScript::8069550345796533008::1767468901::0::1::::<>RichTextLabel<><>0<>0<><>::
 text_box.gd::GDScript/GDScript::6425175518292543878::1767468901::0::1::::TextBox<>RichTextLabel<><>0<>0<><>::
@@ -39,6 +40,9 @@ jump_obstacle.tscn::PackedScene/PackedScene::873064225826002381::1767468901::0::
 linear_bullet.gd::GDScript/GDScript::3704151380151130561::1767468901::0::1::::LinearBullet<>Bullet<><>0<>0<><>::
 linear_bullet.tscn::PackedScene/PackedScene::1525461097114695995::1767468902::0::1::::<><><>0<>0<><>::uid://bs1k3j32otdkj::::res://bullets/linear_bullet.gd<>uid://c6cn3s1xtkoow::::res://bullets/bullet.tscn
 simple_shootable.tscn::PackedScene/PackedScene::440320377405613164::1767468902::0::1::::<><><>0<>0<><>::uid://vy7eelm7fbgd::::res://bullets/linear_bullet.tscn
+::res://cutscenes/::1768046838
+all_bosses_defeated.gd::GDScript::5518799928443193408::1768046859::0::1::::<>Node2D<><>0<>0<><>::
+all_bosses_defeated.tscn::PackedScene::-1::1768046859::0::1::::<><><>0<>0<><>::res://cutscenes/all_bosses_defeated.gd
 ::res://enemy_data/::1767463254
 cherry.gd::GDScript/GDScript::1207508414371890885::1767468902::0::1::::<>Enemy<><>0<>0<><>::
 cherry.tscn::PackedScene/PackedScene::4621432991209416132::1767468957::0::1::::<><><>0<>0<><>::uid://rg6qtfs24ilx::::res://enemy_data/cherry.gd<>uid://ba61g6bt2a3bg::::res://sprites/cherry.png<>uid://cdy881pi383i1::::res://waves/jump.tscn<>uid://dgvkrbgoo6p34::::res://waves/jump_2.tscn
@@ -58,10 +62,10 @@ apple.tres::Resource/Item::6056521842680887675::1767468902::0::1::::<><><>0<>0<>
 item.gd::GDScript/GDScript::6934494824755003353::1767468902::0::1::::Item<>Resource<><>0<>0<><>::
 nice_cream.tres::Resource/Item::3804927511050715794::1767468902::0::1::::<><><>0<>0<><>::uid://c52ed72xkdnj2::::res://items/item.gd
 pie.tres::Resource/Item::5029742011324339799::1767468902::0::1::::<><><>0<>0<><>::uid://c52ed72xkdnj2::::res://items/item.gd
-::res://maps/::1767707038
-main_map.gd::GDScript/GDScript::7685936600581958827::1767706843::0::1::::<>Node2D<><>0<>0<><>::
+::res://maps/::1767707118
+main_map.gd::GDScript::7685936600581958827::1768046859::0::1::::<>Node2D<><>0<>0<><>::
 main_map.png::CompressedTexture2D/CompressedTexture2D::6602521623702250058::1767468898::1767705576::1::::<><><>0<>0<>04043b7235882b3f7f5058dfa61ecf56<>res://.godot/imported/main_map.png-c29cd89112c40f7290a41f4a170f6285.ctex::
-main_map.tscn::PackedScene/PackedScene::47839578051796924::1767706845::0::1::::<><><>0<>0<><>::uid://3fycnn40a6q::::res://player/Jugador.tscn<>uid://dhreiuljtydj4::::res://maps/main_map.gd<>uid://ipyeg1txoqs7::::res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_floors.tres<>uid://dremlqr0s3613::::res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_walls.tres<>res://battle_zone.gd<>uid://b63wldbutwctw::::res://enemy_data/cherry.tscn<>uid://bkavs6k60jki1::::res://enemy_data/poseur.tscn<>uid://bghmxuapoqdkl::::res://enemy_data/present.tscn<>uid://ycbjbgr0j33j::::res://enemy_data/godot.tscn<>uid://c1ckti4141cqc::::res://maps/main_map.png<>uid://d2lq1qmoxglbe::::res://sprites/CherryCharacter.png<>uid://bhdrd0gjpota6::::res://sprites/Poseur.png<>uid://0a5r6gpx5knj::::res://sprites/godot_logo_transparent.png<>uid://cuv0vc82tyi51::::res://songs/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3<>uid://dkl8x52vloajk::::res://door2.gd
+main_map.tscn::PackedScene::47839578051796924::1768046859::0::1::::<><><>0<>0<><>::uid://3fycnn40a6q::::res://player/Jugador.tscn<>uid://dhreiuljtydj4::::res://maps/main_map.gd<>uid://ipyeg1txoqs7::::res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_floors.tres<>uid://dremlqr0s3613::::res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_walls.tres<>res://battle_zone.gd<>uid://b63wldbutwctw::::res://enemy_data/cherry.tscn<>uid://bkavs6k60jki1::::res://enemy_data/poseur.tscn<>uid://bghmxuapoqdkl::::res://enemy_data/present.tscn<>uid://ycbjbgr0j33j::::res://enemy_data/godot.tscn<>uid://c1ckti4141cqc::::res://maps/main_map.png<>uid://d2lq1qmoxglbe::::res://sprites/CherryCharacter.png<>uid://bhdrd0gjpota6::::res://sprites/Poseur.png<>uid://0a5r6gpx5knj::::res://sprites/godot_logo_transparent.png<>uid://cuv0vc82tyi51::::res://songs/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3<>uid://dkl8x52vloajk::::res://door2.gd<>uid://bnkaeusghhp71::::res://sprites/Present_Enemy_transparent.png<>res://shop_entrance.gd
 overworld_original.gd::GDScript/GDScript::8206551792568584308::1767702657::0::1::::<>Node2D<><>0<>0<><>::
 overworld_original.tscn::PackedScene/PackedScene::977969202597563491::1767706845::0::1::::<><><>0<>0<><>::uid://ydsart1o6wwj::::res://maps/Snowdin/Grillbys/Sprites/a_hot.png<>uid://do6kydv1fqpom::::res://maps/overworld_original.gd<>uid://16j66fp5bafh::::res://maps/Snowdin/Grillbys/Sprites/barra.png<>uid://3fycnn40a6q::::res://player/Jugador.tscn<>uid://fnj2sx0kgknw::::res://door.gd
 ::res://maps/Snowdin/::1767705133
@@ -120,6 +124,9 @@ jugder2.png::CompressedTexture2D/CompressedTexture2D::1578760023723775857::17674
 jugizquier1.png::CompressedTexture2D/CompressedTexture2D::1721110928471719226::1767468902::1767468944::1::::<><><>0<>0<>bb2367e5f0aff50ae20b86ad12e43265<>res://.godot/imported/jugizquier1.png-c5ae280b3209fa632f865b240159a1b9.ctex::
 jugizquier2.png::CompressedTexture2D/CompressedTexture2D::8032177409445121648::1767468902::1767468944::1::::<><><>0<>0<>1647ddfb691a1d3c5eff09e72dc0242c<>res://.godot/imported/jugizquier2.png-4706513aa53af7e7e7420a2d8a992ca1.ctex::
 Sprites_frisk.tres::SpriteFrames/SpriteFrames::-1::1767468902::0::1::::<><><>0<>0<><>::res://player/Sprites/frisk/jugarriba1.png<>res://player/Sprites/frisk/jugarriba2.png<>res://player/Sprites/frisk/jugder2.png<>res://player/Sprites/frisk/jugarriba3.png<>res://player/Sprites/frisk/jugador1.png<>res://player/Sprites/frisk/jugador3.png<>res://player/Sprites/frisk/jugador2.png<>res://player/Sprites/frisk/jugizquier1.png<>res://player/Sprites/frisk/jugder1.png<>res://player/Sprites/frisk/jugizquier2.png
+::res://shop/::1768046821
+shop.gd::GDScript::1614651420771822132::1768046859::0::1::::<>Node2D<><>0<>0<><>::
+shop.tscn::PackedScene::-1::1768046859::0::1::::<><><>0<>0<><>::res://shop/shop.gd<>uid://cowlpeawlvafn::::res://text_box/text_box.tscn<>uid://cf0xm6i8snote::::res://themes/theme.tres<>uid://ptt71q0lsxgx::::res://text_box/button.tscn
 ::res://songs/::1767704062
 005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3::AudioStreamMP3/AudioStreamMP3::6221525756751615942::1767468999::1767704062::1::::<><><>0<>0<>f301dfbdb6e8abf401d03b1828149d9b<>res://.godot/imported/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3-eff674b9fcd989256e04218bec4f609c.mp3str::
 Enemy Approaching.wav::AudioStreamWAV/AudioStreamWAV::8221763417588957025::1767468903::1767704062::1::::<><><>0<>0<>ddba7f28fe41478c82ddc311b9e412c9<>res://.godot/imported/Enemy Approaching.wav-27cc556dead5e96383e9be043e7b00d2.sample::
@@ -160,7 +167,7 @@ icon_monochrome_dark.png::CompressedTexture2D/CompressedTexture2D::5568072546765
 nine_patch.png::CompressedTexture2D/CompressedTexture2D::7644101550822004737::1767468903::1767468944::1::::<><><>0<>0<>a590601605d5ce95593380b8d3af0343<>res://.godot/imported/nine_patch.png-a0e0fcd839edecf7aa76fe13572881fe.ctex::
 Poseur.png::CompressedTexture2D/CompressedTexture2D::2884974591462367851::1767468903::1767468944::1::::<><><>0<>0<>b2773fde0d61aa1087f7ad0320627b10<>res://.godot/imported/Poseur.png-b33ea7b4975edd8e9eb78319a108f55e.ctex::
 Present_Enemy_1_battle.webp::CompressedTexture2D/CompressedTexture2D::6489025642132824122::1767468903::1767468944::1::::<><><>0<>0<>1a3782d932398715e62fb2f98c2ac00e<>res://.godot/imported/Present_Enemy_1_battle.webp-613007935f559d56965fa7044b1a8c22.ctex::
-Present_Enemy_transparent.png::CompressedTexture2D::3319527650259482238::1767707029::1767707038::1::::<><><>0<>0<>2b759358d65c5dcad02b113f0509e90f<>res://.godot/imported/Present_Enemy_transparent.png-7aaa63cf5a37d0fd7ad77d820d913591.ctex::
+Present_Enemy_transparent.png::CompressedTexture2D/CompressedTexture2D::3319527650259482238::1767707029::1767707038::1::::<><><>0<>0<>2b759358d65c5dcad02b113f0509e90f<>res://.godot/imported/Present_Enemy_transparent.png-7aaa63cf5a37d0fd7ad77d820d913591.ctex::
 red_soul.svg.png::CompressedTexture2D/CompressedTexture2D::5537186582852979471::1767468903::1767468942::1::::<><><>0<>0<>5e0b2f5ffdc9ce8dec8ca0c04131c11a<>res://.godot/imported/red_soul.svg.png-c5de91fb1212aea179f869ceb3fde4b4.ctex::
 spr_target_0.png::CompressedTexture2D/CompressedTexture2D::4778022260933515496::1767468903::1767468944::1::::<><><>0<>0<>cc768ee3ba763f771c6ae3e9273009e0<>res://.godot/imported/spr_target_0.png-f937ff2584ddcb99fa2692ed98266f27.ctex::
 spr_yellowbullet_pl_5.png::CompressedTexture2D/CompressedTexture2D::1182513560316353963::1767468903::1767468942::1::::<><><>0<>0<>3b249b7c8c7cc39e5374bde7231a4af3<>res://.godot/imported/spr_yellowbullet_pl_5.png-2266c0af637a1503eb9d2e6158eff78a.ctex::
@@ -180,9 +187,9 @@ monster_text_box.gd::GDScript/GDScript::3205704503907650015::1767468904::0::1:::
 monster_text_box.tscn::PackedScene/PackedScene::5061088464094974185::1767468904::0::1::::<><><>0<>0<><>::uid://blw4qqpmroi5d::::res://text_box/monster_text_box.gd<>uid://50v00xr0tl8p::::res://sounds/SND_TXT1.wav
 text_box.tscn::PackedScene/PackedScene::5801596373845480271::1767705578::0::1::::<><><>0<>0<><>::uid://cxsnx4tvhus7o::::res://battle/text_box.gd<>uid://x8op6wfspisx::::res://sounds/SND_TXT2.wav
 util.gd::GDScript/GDScript::4063308804195117782::1767468904::0::1::::Util<>Node<><>0<>0<><>::
-::res://themes/::1767706496
+::res://themes/::1767707118
 DTM-Mono.otf::FontFile/FontFile::2230147429470665653::1767468904::1767706099::1::::<><><>0<>0<>6cce161855bba177f72e44ae4c9c2ac7<>res://.godot/imported/DTM-Mono.otf-13530762f37392299aeeb9a1a183a40d.fontdata::
-theme.tres::Theme/Theme::5176814591894586474::1767706496::0::1::::<><><>0<>0<><>::
+theme.tres::Theme/Theme::5176814591894586474::1767707118::0::1::::<><><>0<>0<><>::
 undertale-damage.otf::FontFile/FontFile::3656716777809977890::1767468904::1767706099::1::::<><><>0<>0<>2c771f37885576fe7d2261a11cd2ef6e<>res://.godot/imported/undertale-damage.otf-a5482a5dc625c074db30ddfec54f5b5c.fontdata::
 ::res://waves/::1767463255
 diamonds_from_below.gd::GDScript/GDScript::4498926313836985027::1767468904::0::1::::<>Wave<><>0<>0<><>::

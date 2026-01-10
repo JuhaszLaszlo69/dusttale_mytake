@@ -71,7 +71,10 @@ func _ready() -> void:
 	acts = enemy.acts.duplicate(true)
 	bullet_waves = enemy.bullet_waves.duplicate(true)
 	encounter_text = enemy.encounter_text
-	text_box.scroll(encounter_text)            
+	text_box.scroll(encounter_text)
+	
+	# Load items from global inventory
+	items = Global.battle_inventory.duplicate(true)            
 	
 	Global.wave_done.connect(finish_hell)
 	Global.add_bullet.connect(func(bullet: Node2D, transform: Transform2D):
@@ -173,10 +176,25 @@ func _input(event: InputEvent) -> void:
 			create_tween().tween_property(%Box, "scale", Vector2(1, 1), 0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
 			
 			var gold := randi_range(50, 75)
-			text_box.scroll("Battle won\nGot 0 EXP and %d Gold" % gold)
+			var exp := 0
+			
+			# Check if this is a boss and award EXP if not already killed
+			var boss_name := enemy.enemy_name
+			if boss_name in Global.BOSS_NAMES and not Global.is_boss_killed(boss_name):
+				Global.mark_boss_killed(boss_name)
+				exp = randi_range(25, 50)
+				Global.add_exp(exp)
+				Global.player_gold += gold
+			else:
+				# Regular enemy, still give gold but no EXP
+				Global.player_gold += gold
+			
+			text_box.scroll("Battle won\nGot %d EXP and %d Gold" % [exp, gold])
 			await text_box.finished_scrolling
 			await Fade.fade_into_black()
-			get_tree().change_scene_to_file("uid://cnxrqinpyif6b")
+			# Return to last scene, or default to overworld_original if not set
+			var return_scene = Global.last_scene_path if Global.last_scene_path != "" else "uid://cnxrqinpyif6b"
+			get_tree().change_scene_to_file(return_scene)
 		elif not can_spare:
 			%SelectSound.play()
 	
@@ -248,7 +266,9 @@ func player_take_damage(amount: int, soul: Soul) -> void:
 			text_box.scroll("Battle Lost...")
 			await text_box.finished_scrolling
 			await Fade.fade_into_black()
-			get_tree().change_scene_to_file("uid://cnxrqinpyif6b")
+			# Return to last scene, or default to overworld_original if not set
+			var return_scene = Global.last_scene_path if Global.last_scene_path != "" else "uid://cnxrqinpyif6b"
+			get_tree().change_scene_to_file(return_scene)
 			)
 
 func _on_attack_button_pressed() -> void:
@@ -271,10 +291,24 @@ func _on_anim_animation_finished(anim_name: StringName) -> void:
 		text_box.modulate = Color.RED
 		var exp := randi_range(25, 50)
 		var gold := randi_range(20, 30)
+		
+		# Check if this is a boss and award EXP if not already killed
+		var boss_name := enemy.enemy_name
+		if boss_name in Global.BOSS_NAMES and not Global.is_boss_killed(boss_name):
+			Global.mark_boss_killed(boss_name)
+			Global.add_exp(exp)
+			Global.player_gold += gold
+		else:
+			# Regular enemy, still give gold but no EXP
+			Global.player_gold += gold
+			exp = 0
+		
 		text_box.scroll("Battle won\nGot %d EXP and %d Gold" % [exp, gold])
 		await text_box.finished_scrolling
 		await Fade.fade_into_black()
-		get_tree().change_scene_to_file("uid://cnxrqinpyif6b")
+		# Return to last scene, or default to overworld_original if not set
+		var return_scene = Global.last_scene_path if Global.last_scene_path != "" else "uid://cnxrqinpyif6b"
+		get_tree().change_scene_to_file(return_scene)
 	elif anim_name == "monster_hurt":
 		attack_bar_visibility(false)
 		if enemy_hp <= 0:
@@ -341,6 +375,11 @@ func use_item(item: Item) -> void:
 	player_hp += item.amount
 	text_box.scroll(item.text)
 	items.erase(item)
+	# Also remove from global inventory by finding matching item
+	for i in range(Global.battle_inventory.size()):
+		if Global.battle_inventory[i].item_name == item.item_name:
+			Global.battle_inventory.remove_at(i)
+			break
 	is_choosing_item = false
 	is_reading_item_text = true
 

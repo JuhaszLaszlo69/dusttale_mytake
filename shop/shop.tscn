@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://rfhmyittk3tv"]
+
+[ext_resource type="Script" uid="uid://xafcqnb747oq" path="res://shop/shop.gd" id="1_shop"]
+[ext_resource type="PackedScene" uid="uid://cowlpeawlvafn" path="res://text_box/text_box.tscn" id="2_textbox"]
+[ext_resource type="Theme" uid="uid://cf0xm6i8snote" path="res://themes/theme.tres" id="3_theme"]
+
+[node name="Shop" type="Node2D"]
+script = ExtResource("1_shop")
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="UILayer"]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="UI" type="Control" parent="UILayer"]
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ShopContainer" type="VBoxContainer" parent="UILayer/UI"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -250.0
+offset_right = 350.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Title" type="Label" parent="UILayer/UI/ShopContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "SHOP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExpLabel" type="Label" parent="UILayer/UI/ShopContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "EXP: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoldLabel" type="Label" parent="UILayer/UI/ShopContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "Gold: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemsContainer" type="VBoxContainer" parent="UILayer/UI/ShopContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="ExitButton" type="Button" parent="UILayer/UI/ShopContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_theme")
+theme_override_font_sizes/font_size = 30
+text = "Exit"
+
+[node name="TextBox" parent="UILayer/UI" instance=ExtResource("2_textbox")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_right = 0.0
+offset_left = 50.0
+offset_top = -150.0
+offset_right = 1230.0
+offset_bottom = -50.0
+grow_horizontal = 1
+grow_vertical = 0
+bbcode_enabled = true
+
+[connection signal="pressed" from="UILayer/UI/ShopContainer/ExitButton" to="." method="_on_exit_button_pressed"]

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dhreiuljtydj4" path="res://maps/main_map.gd" id="2"]
 [ext_resource type="TileSet" uid="uid://ipyeg1txoqs7" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_floors.tres" id="3"]
 [ext_resource type="TileSet" uid="uid://dremlqr0s3613" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_walls.tres" id="4"]
-[ext_resource type="Script" path="res://battle_zone.gd" id="5"]
+[ext_resource type="Script" uid="uid://btrkmf3766bkl" path="res://battle_zone.gd" id="5"]
 [ext_resource type="PackedScene" uid="uid://b63wldbutwctw" path="res://enemy_data/cherry.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://bkavs6k60jki1" path="res://enemy_data/poseur.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://bghmxuapoqdkl" path="res://enemy_data/present.tscn" id="8"]
@@ -25,6 +25,74 @@ size = Vector2(26, 38)
 
 [node name="MainMap" type="Node2D"]
 script = ExtResource("2")
+
+[node name="InventoryUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1000.0
+offset_top = -200.0
+offset_right = 1280.0
+offset_bottom = -50.0
+grow_vertical = 0
+
+[node name="InventoryContainer" type="VBoxContainer" parent="InventoryUI"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryLabel" type="Label" parent="InventoryUI/InventoryContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Inventory:
+(Empty)"
+vertical_alignment = 1
+
+[node name="ExpUILayer" type="CanvasLayer" parent="."]
+
+[node name="ExpUI" type="Control" parent="ExpUILayer"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -280.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 110.0
+grow_horizontal = 0
+
+[node name="ExpLabel" type="Label" parent="ExpUILayer/ExpUI"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "EXP: 0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GoldLabel" type="Label" parent="ExpUILayer/ExpUI"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Gold: 0"
+horizontal_alignment = 2
+vertical_alignment = 1
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_i4yi8")
@@ -117,6 +185,7 @@ position = Vector2(320, 400)
 position = Vector2(20, 1075)
 script = ExtResource("5")
 enemy_scene = ExtResource("6")
+boss_name = "Cherry"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CherryBattleZone"]
 shape = SubResource("RectangleShape2D_1")
@@ -125,6 +194,7 @@ shape = SubResource("RectangleShape2D_1")
 position = Vector2(-260, 825)
 script = ExtResource("5")
 enemy_scene = ExtResource("7")
+boss_name = "Poseur"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PoseurBattleZone"]
 shape = SubResource("RectangleShape2D_1")
@@ -133,6 +203,7 @@ shape = SubResource("RectangleShape2D_1")
 position = Vector2(320, 1075)
 script = ExtResource("5")
 enemy_scene = ExtResource("8")
+boss_name = "Present"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PresentBattleZone"]
 shape = SubResource("RectangleShape2D_1")
@@ -141,6 +212,7 @@ shape = SubResource("RectangleShape2D_1")
 position = Vector2(600, 710)
 script = ExtResource("5")
 enemy_scene = ExtResource("9")
+boss_name = "Godot"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GodotBattleZone"]
 shape = SubResource("RectangleShape2D_1")
@@ -150,17 +222,20 @@ z_index = -1
 position = Vector2(158, 746)
 texture = ExtResource("10_286o7")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CherrySprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(21, 1059)
 scale = Vector2(0.0473633, 0.0473633)
 texture = ExtResource("11_t3ofs")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="PoseurSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(-258, 820)
 scale = Vector2(0.222222, 0.222222)
 texture = ExtResource("12_dt6kx")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="GodotSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(600, 706)
 scale = Vector2(0.211225, 0.211225)
 texture = ExtResource("13_dt6kx")
@@ -172,7 +247,8 @@ script = ExtResource("15_1k36j")
 position = Vector2(318, 353)
 shape = SubResource("RectangleShape2D_i4yi8")
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="PresentSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(321, 1077)
 scale = Vector2(0.396667, 0.387089)
 texture = ExtResource("16_ss868")
