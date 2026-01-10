@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://xf577qou5u3"]
+[gd_scene load_steps=22 format=3 uid="uid://xf577qou5u3"]
 
 [ext_resource type="PackedScene" uid="uid://3fycnn40a6q" path="res://player/Jugador.tscn" id="1"]
 [ext_resource type="Script" uid="uid://dhreiuljtydj4" path="res://maps/main_map.gd" id="2"]
@@ -16,6 +16,9 @@
 [ext_resource type="AudioStream" uid="uid://cuv0vc82tyi51" path="res://songs/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3" id="14_i4yi8"]
 [ext_resource type="Script" uid="uid://dkl8x52vloajk" path="res://door2.gd" id="15_1k36j"]
 [ext_resource type="Texture2D" uid="uid://bnkaeusghhp71" path="res://sprites/Present_Enemy_transparent.png" id="16_ss868"]
+[ext_resource type="Texture2D" uid="uid://cp64xu0yqkp7j" path="res://collision_walls/Képernyőkép 2026-01-10 151224.png" id="17_my5eh"]
+[ext_resource type="Texture2D" uid="uid://dfxpkfii1ljj2" path="res://collision_walls/Képernyőkép 2026-01-10 152235.png" id="18_cmh66"]
+[ext_resource type="Texture2D" uid="uid://bfxy80k5gtdrf" path="res://collision_walls/Képernyőkép 2026-01-10 152438.png" id="19_uomfm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(100, 100)
@@ -116,66 +119,87 @@ layer_0/z_index = 1
 [node name="Collisions" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(305, 364, 331, 364, 331, 385, 366, 385, 366, 393, 362, 395, 361, 400, 365, 403, 371, 405, 386, 405, 396, 402, 396, 396, 390, 393, 390, 386, 439, 386, 458, 405, 458, 427, 437, 448, 436, 505, 332, 504, 332, 525, 438, 525, 458, 545, 458, 585, 438, 606, 398, 657, 393, 668, 392, 705, 398, 706, 399, 714, 404, 721, 412, 725, 413, 736, 437, 737, 437, 725, 445, 724, 450, 722, 454, 717, 457, 711, 458, 705, 486, 705, 486, 712, 480, 716, 480, 721, 486, 724, 497, 726, 507, 725, 515, 722, 516, 716, 510, 713, 510, 706, 705, 706, 705, 713, 699, 716, 701, 720, 706, 724, 725, 725, 735, 723, 734, 716, 730, 713, 729, 706, 757, 705, 759, 715, 768, 724, 777, 725, 778, 767, 779, 827, 712, 826, 712, 845, 757, 846, 761, 858, 771, 865, 778, 866, 778, 907, 765, 911, 760, 919, 759, 925, 638, 926, 633, 912, 625, 907, 620, 906, 618, 906, 617, 865, 625, 865, 635, 857, 638, 845, 685, 845, 685, 824, 532, 824, 532, 845, 578, 846, 580, 857, 587, 862, 598, 866, 597, 906, 584, 912, 580, 920, 578, 926, 458, 926, 455, 915, 443, 906, 439, 907, 438, 866, 447, 864, 455, 856, 458, 845, 504, 845, 505, 822, 439, 822, 439, 776, 413, 776, 413, 785, 418, 785, 419, 927, 387, 929, 378, 942, 378, 1011, 383, 1019, 390, 1025, 408, 1026, 417, 1026, 417, 1041, 419, 1044, 437, 1046, 450, 1051, 462, 1063, 461, 1091, 379, 1090, 372, 1091, 373, 1124, 458, 1125, 439, 1146, 421, 1147, 418, 1152, 419, 1167, 399, 1166, 399, 1159, 373, 1158, 373, 1166, 352, 1169, 341, 1172, 337, 1185, 337, 1249, 527, 1254, 524, 977, 889, 977, 875, 594, 554, 590, 555, 319, 481, 224, 307, 222)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(305, 334, 305, 386, 272, 386, 272, 393, 275, 395, 276, 399, 275, 402, 271, 404, 266, 405, 250, 406, 243, 403, 240, 402, 240, 396, 246, 393, 246, 386, 198, 386, 183, 400, 183, 405, 136, 405, 136, 387, 90, 386, 90, 391, 93, 394, 96, 396, 95, 401, 90, 405, 82, 405, 69, 406, 63, 403, 59, 401, 60, 397, 63, 394, 66, 393, 66, 386, 37, 386, 18, 405, 18, 422, 14, 425, -2, 426, -23, 446, -22, 462, -26, 466, -42, 466, -62, 485, -62, 502, -67, 506, -83, 506, -103, 525, -102, 542, -107, 546, -122, 546, -142, 565, -142, 606, -82, 607, -82, 566, -62, 546, -62, 530, -57, 526, -42, 526, -22, 506, -22, 490, -18, 486, -2, 486, 19, 466, 18, 450, 23, 446, 38, 446, 58, 427, 139, 426, 139, 423, 133, 423, 133, 420, 182, 421, 183, 429, 188, 432, 189, 436, 197, 450, 200, 465, 200, 502, 200, 504, 299, 504, 304, 504, 304, 525, 197, 526, 178, 546, 178, 585, 198, 606, 199, 610, 202, 624, 202, 628, 204, 646, 204, 673, 205, 705, 92, 705, 92, 655, 65, 655, 65, 705, 23, 706, 23, 722, 0, 722, -4, 722, -1, 706, -122, 706, -123, 715, -127, 721, -138, 725, -143, 728, -143, 801, -96, 801, -96, 826, -141, 826, -143, 907, -142, 1022, -148, 1027, -148, 1033, -145, 1036, -144, 1042, -151, 1045, -171, 1046, -180, 1042, -181, 1034, -175, 1032, -174, 1027, -179, 1025, -184, 1018, -183, 965, -235, 965, -236, 984, -241, 984, -242, 919, -183, 920, -182, 846, -187, 846, -188, 766, -182, 766, -182, 369, -182, 405, -197, 405, -202, 403, -201, 385, -218, 386, -222, 383, -222, 365, -422, 365, -422, 381, -426, 385, -442, 385, -442, 401, -445, 405, -462, 405, -462, 500, -443, 500, -442, 564, -448, 564, -448, 544, -462, 544, -462, 604, -441, 604, -440, 686, -461, 686, -462, 707, -457, 707, -456, 785, -462, 786, -463, 809, -457, 808, -456, 884, -463, 885, -463, 926, -447, 926, -443, 930, -441, 945, -442, 1026, -323, 1026, -324, 1087, -303, 1108, -282, 1108, -281, 1147, -403, 1147, -403, 1130, -407, 1126, -423, 1127, -423, 1110, -428, 1107, -443, 1107, -442, 1029, -611, 1030, -608, 716, -601, 370, -600, 183, -178, 201, 96, 203, 303, 217)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(238, 606, 398, 606, 365, 653, 365, 705, 358, 705, 357, 716, 352, 720, 345, 725, 342, 725, 342, 739, 293, 739, 293, 725, 287, 723, 281, 719, 280, 713, 278, 706, 231, 706, 231, 671, 232, 605)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(22, 765, 18, 766, 18, 806, -3, 826, -69, 826, -69, 804, -3, 804, -2, 764)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(298, 786, 298, 847, 232, 847, 232, 865, 297, 866, 298, 880, 342, 880, 343, 847, 338, 847, 338, 786, 342, 786, 342, 773, 293, 773, 293, 785)
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(343, 912, 293, 912, 293, 926, 297, 926, 299, 1031, 302, 1039, 309, 1044, 318, 1046, 324, 1045, 333, 1039, 337, 1033, 338, 1015, 337, 926, 342, 926)
 
 [node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(336, 1186, 297, 1186, 294, 1174, 288, 1170, 271, 1167, 262, 1166, 262, 1155, 239, 1155, 239, 1166, 217, 1167, 218, 1151, 214, 1147, 198, 1147, 177, 1126, 239, 1126, 262, 1126, 263, 1089, 259, 1087, 177, 1087, 176, 1060, 197, 1046, 213, 1045, 217, 1043, 218, 1038, 217, 1031, 218, 1024, 240, 1026, 248, 1023, 254, 1017, 259, 1009, 257, 977, 256, 959, 137, 959, 138, 865, 204, 865, 204, 846, 119, 846, 118, 927, 118, 960, -75, 959, -75, 945, -82, 945, -82, 1022, -76, 1024, -62, 1025, -62, 1046, -101, 1082, -65, 1049, -56, 1045, -57, 1001, 5, 1001, 6, 1012, -2, 1018, 3, 1022, 10, 1025, 19, 1025, 26, 1025, 36, 1022, 35, 1017, 30, 1012, 31, 1006, 97, 1006, 98, 1022, 103, 1025, 119, 1026, 118, 1041, 122, 1045, 132, 1045, 132, 1106, 138, 1105, 139, 1129, 122, 1132, 118, 1150, 102, 1151, 100, 1168, -421, 1166, -423, 1149, -443, 1148, -444, 1129, -462, 1128, -465, 1110, -468, 1030, -501, 1030, -489, 1109, -468, 1143, -462, 1165, -419, 1262, 113, 1269, 335, 1269)
 
 [node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-443, 1030, -442, 1106, -427, 1107, -423, 1110, -423, 1126, -407, 1127, -403, 1131, -402, 1146, -281, 1147, -282, 1107, -303, 1106)
 
 [node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-243, 1146, -242, 1110, -166, 1110, -166, 1146, -62, 1147, -63, 1126, -106, 1126, -106, 1122, -62, 1081, -55, 1081, -56, 1154, -59, 1156, -244, 1155)
 
 [node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-401, 499, -370, 499, -367, 382, -361, 381, -322, 381, -322, 443, -323, 446, -329, 446, -329, 426, -356, 426, -357, 485, -363, 486, -363, 543, -367, 547, -395, 546, -396, 566, -403, 565)
 
 [node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-277, 445, -281, 446, -282, 379, -239, 380, -236, 387, -236, 397, -234, 400, -219, 401, -217, 404, -216, 418, -200, 421, -197, 423, -196, 655, -195, 732, -200, 736, -205, 737, -334, 737, -335, 806, -381, 846, -387, 846, -387, 842, -382, 840, -342, 803, -341, 734, -337, 727, -319, 727, -321, 687, -403, 686, -402, 607, -320, 609, -318, 490, -247, 490, -244, 726, -202, 726, -202, 685, -208, 686, -207, 607, -202, 607, -202, 565, -206, 565, -206, 489, -203, 489, -203, 465, -216, 466, -220, 463, -221, 444, -237, 444, -242, 442, -242, 424, -276, 424)
 
 [node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-283, 985, -288, 986, -288, 965, -337, 966, -342, 964, -342, 886, -384, 886, -387, 885, -387, 882, -383, 881, -342, 841, -336, 841, -337, 917, -335, 920, -282, 920)
 
 [node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-309, 785, -294, 785, -288, 783, -284, 782, -284, 775, -289, 774, -298, 772, -309, 772, -317, 773, -320, 777, -319, 782)
 
 [node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-230, 785, -215, 785, -205, 783, -204, 775, -210, 773, -224, 771, -233, 773, -240, 776, -238, 781, -233, 783)
 
 [node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-230, 885, -215, 885, -205, 882, -205, 875, -211, 873, -227, 872, -236, 873, -239, 877, -239, 884, -234, 884)
 
 [node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-286, 882, -295, 886, -309, 886, -319, 882, -320, 875, -313, 872, -302, 870, -294, 871, -287, 873, -284, 875)
 
 [node name="CollisionPolygon2D17" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(11, 1145, 25, 1145, 35, 1142, 35, 1136, 31, 1133, 19, 1131, 3, 1133, 0, 1137, 1, 1143)
 
 [node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(-49, 905, -35, 906, -24, 902, -25, 895, -33, 893, -46, 891, -55, 894, -59, 897, -58, 901)
 
 [node name="CollisionPolygon2D19" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(170, 905, 186, 905, 195, 902, 194, 896, 187, 893, 173, 893, 163, 894, 159, 899, 161, 903)
 
 [node name="CollisionPolygon2D20" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(250, 765, 266, 765, 272, 763, 276, 762, 275, 755, 270, 753, 262, 752, 252, 752, 243, 753, 241, 757, 240, 763, 245, 764, 252, 765)
 
 [node name="CollisionPolygon2D21" type="CollisionPolygon2D" parent="Collisions"]
+visible = false
 polygon = PackedVector2Array(311, 585, 325, 585, 335, 581, 335, 575, 330, 574, 322, 572, 312, 572, 305, 573, 302, 575, 301, 582, 306, 584)
 
 [node name="Player" parent="." instance=ExtResource("1")]
@@ -252,3 +276,18 @@ unique_name_in_owner = true
 position = Vector2(321, 1077)
 scale = Vector2(0.396667, 0.387089)
 texture = ExtResource("16_ss868")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(384, 486.2)
+scale = Vector2(0.290761, 0.294444)
+texture = ExtResource("17_my5eh")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(317.75, 460.564)
+scale = Vector2(0.242347, 0.242347)
+texture = ExtResource("18_cmh66")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(252, 485.5)
+scale = Vector2(0.239394, 0.239394)
+texture = ExtResource("19_uomfm")
