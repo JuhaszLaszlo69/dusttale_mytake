@@ -1,17 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://n60alop615ch"]
+[gd_scene load_steps=11 format=3 uid="uid://n60alop615ch"]
 
 [ext_resource type="Texture2D" uid="uid://ydsart1o6wwj" path="res://maps/Snowdin/Grillbys/Sprites/a_hot.png" id="1"]
 [ext_resource type="Script" uid="uid://do6kydv1fqpom" path="res://maps/overworld_original.gd" id="1_735m8"]
 [ext_resource type="Texture2D" uid="uid://16j66fp5bafh" path="res://maps/Snowdin/Grillbys/Sprites/barra.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://3fycnn40a6q" path="res://player/Jugador.tscn" id="3"]
 [ext_resource type="Script" uid="uid://fnj2sx0kgknw" path="res://door.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://n5nrdc0nppl4" path="res://shop/shopkeeper.png" id="7_1ohu6"]
 [ext_resource type="Script" uid="uid://d2ybodeikb7nm" path="res://shop_collision.gd" id="10_shop_collision"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
 size = Vector2(35, 44)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_shop"]
-size = Vector2(100, 50)
+size = Vector2(35, 18)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i5doc"]
 
@@ -55,6 +56,7 @@ position = Vector2(158.525, 82.4081)
 script = ExtResource("10_shop_collision")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mapa/ShopCollision"]
+position = Vector2(4.47501, 21.5919)
 shape = SubResource("RectangleShape2D_shop")
 
 [node name="colisiones" type="StaticBody2D" parent="."]
@@ -136,3 +138,9 @@ theme_override_font_sizes/font_size = 30
 text = "Gold: 0"
 horizontal_alignment = 2
 vertical_alignment = 1
+
+[node name="ShopKeeper" type="Sprite2D" parent="."]
+position = Vector2(329, 128)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("7_1ohu6")
+hframes = 2
