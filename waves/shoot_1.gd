@@ -13,4 +13,4 @@ func _on_spawn_timer_timeout() -> void:
 	add_child(bullet)
 	%PathFollow2D.progress_ratio = randf()
 	bullet.global_transform = %PathFollow2D.global_transform
-	bullet.speed = 1000
+	bullet.speed = 500

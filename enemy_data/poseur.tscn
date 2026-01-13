@@ -8,7 +8,7 @@
 [node name="Poseur" type="Node"]
 script = ExtResource("1_grqwl")
 enemy_name = "Poseur"
-HP = 1000
+HP = 500
 sprite = ExtResource("2_gsvqt")
 sprite_scale = 1.5
 acts = Array[String](["Check", "Pose"])

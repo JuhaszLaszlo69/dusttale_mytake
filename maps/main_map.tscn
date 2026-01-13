@@ -1,10 +1,10 @@
-[gd_scene load_steps=22 format=3 uid="uid://xf577qou5u3"]
+[gd_scene load_steps=49 format=3 uid="uid://xf577qou5u3"]
 
 [ext_resource type="PackedScene" uid="uid://3fycnn40a6q" path="res://player/Jugador.tscn" id="1"]
 [ext_resource type="Script" uid="uid://dhreiuljtydj4" path="res://maps/main_map.gd" id="2"]
 [ext_resource type="TileSet" uid="uid://ipyeg1txoqs7" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_floors.tres" id="3"]
 [ext_resource type="TileSet" uid="uid://dremlqr0s3613" path="res://Assets/Resources/TileSets/Large Labyrinth/large_labyrinth_walls.tres" id="4"]
-[ext_resource type="Script" uid="uid://btrkmf3766bkl" path="res://battle_zone.gd" id="5"]
+[ext_resource type="Script" uid="uid://btrkmf3766bkl" path="res://battle/battle_zone.gd" id="5"]
 [ext_resource type="PackedScene" uid="uid://b63wldbutwctw" path="res://enemy_data/cherry.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://bkavs6k60jki1" path="res://enemy_data/poseur.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://bghmxuapoqdkl" path="res://enemy_data/present.tscn" id="8"]
@@ -14,11 +14,38 @@
 [ext_resource type="Texture2D" uid="uid://bhdrd0gjpota6" path="res://sprites/Poseur.png" id="12_dt6kx"]
 [ext_resource type="Texture2D" uid="uid://0a5r6gpx5knj" path="res://sprites/godot_logo_transparent.png" id="13_dt6kx"]
 [ext_resource type="AudioStream" uid="uid://cuv0vc82tyi51" path="res://songs/005. Ruins (UNDERTALE Soundtrack) - Toby Fox.mp3" id="14_i4yi8"]
-[ext_resource type="Script" uid="uid://dkl8x52vloajk" path="res://door2.gd" id="15_1k36j"]
+[ext_resource type="Script" uid="uid://dkl8x52vloajk" path="res://maps/door2.gd" id="15_1k36j"]
 [ext_resource type="Texture2D" uid="uid://bnkaeusghhp71" path="res://sprites/Present_Enemy_transparent.png" id="16_ss868"]
 [ext_resource type="Texture2D" uid="uid://cp64xu0yqkp7j" path="res://collision_walls/Képernyőkép 2026-01-10 151224.png" id="17_my5eh"]
 [ext_resource type="Texture2D" uid="uid://dfxpkfii1ljj2" path="res://collision_walls/Képernyőkép 2026-01-10 152235.png" id="18_cmh66"]
 [ext_resource type="Texture2D" uid="uid://bfxy80k5gtdrf" path="res://collision_walls/Képernyőkép 2026-01-10 152438.png" id="19_uomfm"]
+[ext_resource type="Texture2D" uid="uid://ckh158sqkawmk" path="res://collision_walls/Képernyőkép 2026-01-13 162637.png" id="20_pe7ml"]
+[ext_resource type="Texture2D" uid="uid://ckpia80lvy7my" path="res://collision_walls/Képernyőkép 2026-01-13 162921.png" id="21_snadw"]
+[ext_resource type="Texture2D" uid="uid://bxq50ufohcloo" path="res://collision_walls/Képernyőkép 2026-01-13 163319.png" id="22_mpyp2"]
+[ext_resource type="Texture2D" uid="uid://cc13aawnnayv5" path="res://collision_walls/Képernyőkép 2026-01-13 163428.png" id="23_kf0fg"]
+[ext_resource type="Texture2D" uid="uid://cu4f10esvd18e" path="res://collision_walls/Képernyőkép 2026-01-13 164112.png" id="24_2nes4"]
+[ext_resource type="Texture2D" uid="uid://dtji42npo6ajo" path="res://collision_walls/Képernyőkép 2026-01-13 165026.png" id="25_j113b"]
+[ext_resource type="Texture2D" uid="uid://711paj4c1smd" path="res://collision_walls/Képernyőkép 2026-01-13 165203.png" id="26_0yprb"]
+[ext_resource type="Texture2D" uid="uid://dpxcrvpku3o74" path="res://collision_walls/Képernyőkép 2026-01-13 165400.png" id="27_v8aoj"]
+[ext_resource type="Texture2D" uid="uid://cfg7hw8sxom62" path="res://collision_walls/Képernyőkép 2026-01-13 165710.png" id="28_qts5e"]
+[ext_resource type="Texture2D" uid="uid://boc2os0832c2e" path="res://collision_walls/Képernyőkép 2026-01-13 170001.png" id="29_v8aoj"]
+[ext_resource type="Texture2D" uid="uid://d2om5wxlpboa1" path="res://collision_walls/Képernyőkép 2026-01-13 170134.png" id="30_qts5e"]
+[ext_resource type="Texture2D" uid="uid://dgv1bkactg6ms" path="res://collision_walls/Képernyőkép 2026-01-13 170242.png" id="31_qsie3"]
+[ext_resource type="Texture2D" uid="uid://67d1rccbsh5s" path="res://collision_walls/Képernyőkép 2026-01-13 170432.png" id="32_xy30w"]
+[ext_resource type="Texture2D" uid="uid://df4s152tkq3ib" path="res://collision_walls/Képernyőkép 2026-01-13 170548.png" id="33_3r7fl"]
+[ext_resource type="Texture2D" uid="uid://dsgc12imr8adh" path="res://collision_walls/Képernyőkép 2026-01-13 170807.png" id="34_xy30w"]
+[ext_resource type="Texture2D" uid="uid://u7mq605fa4dq" path="res://collision_walls/Képernyőkép 2026-01-13 170953.png" id="35_3r7fl"]
+[ext_resource type="Texture2D" uid="uid://dk8fpi7egjvii" path="res://collision_walls/Képernyőkép 2026-01-13 171145.png" id="36_yp8ht"]
+[ext_resource type="Texture2D" uid="uid://b4r72f2x5ls4x" path="res://collision_walls/Képernyőkép 2026-01-13 171448.png" id="37_opvxk"]
+[ext_resource type="Texture2D" uid="uid://dbfypbi5rgltr" path="res://collision_walls/Képernyőkép 2026-01-13 171552.png" id="38_4ld77"]
+[ext_resource type="Texture2D" uid="uid://dj1kwl1x6eaxk" path="res://collision_walls/Képernyőkép 2026-01-13 171732.png" id="39_1b7ac"]
+[ext_resource type="Texture2D" uid="uid://dc7nf02o5x3kc" path="res://collision_walls/Képernyőkép 2026-01-13 171812.png" id="40_dpp6u"]
+[ext_resource type="Texture2D" uid="uid://dctg6ycuu5rhe" path="res://collision_walls/Képernyőkép 2026-01-13 171854.png" id="41_guumd"]
+[ext_resource type="Texture2D" uid="uid://deew6cfathew5" path="res://collision_walls/Képernyőkép 2026-01-13 172020.png" id="42_mrlkr"]
+[ext_resource type="Texture2D" uid="uid://6ijhbtvaa03t" path="res://collision_walls/Képernyőkép 2026-01-13 172127.png" id="43_b0unw"]
+[ext_resource type="Texture2D" uid="uid://b8g1iy8tso6kf" path="res://collision_walls/Képernyőkép 2026-01-13 172231.png" id="44_axjmv"]
+[ext_resource type="Texture2D" uid="uid://daxa7nsf3j5hx" path="res://collision_walls/Képernyőkép 2026-01-13 172454.png" id="45_1b7ac"]
+[ext_resource type="Texture2D" uid="uid://8goyidpenala" path="res://collision_walls/Képernyőkép 2026-01-13 172618.png" id="46_dpp6u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(100, 100)
@@ -28,6 +55,7 @@ size = Vector2(26, 38)
 
 [node name="MainMap" type="Node2D"]
 script = ExtResource("2")
+metadata/_edit_horizontal_guides_ = [-140.0]
 
 [node name="InventoryUI" type="Control" parent="."]
 layout_mode = 3
@@ -291,3 +319,139 @@ texture = ExtResource("18_cmh66")
 position = Vector2(252, 485.5)
 scale = Vector2(0.239394, 0.239394)
 texture = ExtResource("19_uomfm")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(158, 397.469)
+scale = Vector2(0.390625, 0.390625)
+texture = ExtResource("20_pe7ml")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(318, 627)
+scale = Vector2(0.318725, 0.323718)
+texture = ExtResource("21_snadw")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(425.313, 745.392)
+scale = Vector2(0.329546, 0.324434)
+texture = ExtResource("22_mpyp2")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(318, 746)
+scale = Vector2(0.242683, 0.242683)
+texture = ExtResource("23_kf0fg")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(461.443, 806)
+scale = Vector2(0.216672, 0.219178)
+texture = ExtResource("24_2nes4")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(518, 779.86)
+scale = Vector2(0.1, 0.102285)
+texture = ExtResource("25_j113b")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(608, 805.813)
+scale = Vector2(0.21813, 0.21744)
+texture = ExtResource("26_0yprb")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(698, 780)
+scale = Vector2(0.161491, 0.164706)
+texture = ExtResource("27_v8aoj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(747, 806.5)
+scale = Vector2(0.250871, 0.245341)
+texture = ExtResource("28_qts5e")
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(318, 886)
+scale = Vector2(0.269531, 0.269531)
+texture = ExtResource("29_v8aoj")
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(420.5, 1086)
+scale = Vector2(0.262238, 0.265734)
+texture = ExtResource("30_qts5e")
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(385.39, 1126.82)
+rotation = 3.14159
+scale = Vector2(-0.263426, -0.262305)
+texture = ExtResource("31_qsie3")
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(216.75, 1085.68)
+scale = Vector2(0.266779, 0.262997)
+texture = ExtResource("32_xy30w")
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(251, 1125.76)
+scale = Vector2(0.24, 0.239518)
+texture = ExtResource("33_3r7fl")
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(170.875, 826.5)
+scale = Vector2(0.241103, 0.243976)
+texture = ExtResource("34_xy30w")
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(264.5, 826)
+scale = Vector2(0.241007, 0.241692)
+texture = ExtResource("35_3r7fl")
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(217.5, 800)
+scale = Vector2(0.126154, 0.123894)
+texture = ExtResource("36_yp8ht")
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(128, 838)
+scale = Vector2(0.27027, 0.277027)
+texture = ExtResource("37_opvxk")
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(11.5, 725)
+scale = Vector2(0.287671, 0.291513)
+texture = ExtResource("38_4ld77")
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(-35, 786)
+scale = Vector2(0.289648, 0.289648)
+texture = ExtResource("39_1b7ac")
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(-107, 760)
+scale = Vector2(0.179054, 0.179054)
+texture = ExtResource("40_dpp6u")
+
+[node name="Sprite2D25" type="Sprite2D" parent="."]
+position = Vector2(-121, 786.328)
+scale = Vector2(0.203125, 0.196641)
+texture = ExtResource("41_guumd")
+
+[node name="Sprite2D26" type="Sprite2D" parent="."]
+position = Vector2(-113.093, 936.219)
+scale = Vector2(0.354873, 0.346398)
+texture = ExtResource("42_mrlkr")
+
+[node name="Sprite2D27" type="Sprite2D" parent="."]
+position = Vector2(-140, 927)
+scale = Vector2(0.197802, 0.178404)
+texture = ExtResource("43_b0unw")
+
+[node name="Sprite2D28" type="Sprite2D" parent="."]
+position = Vector2(-127, 918.585)
+scale = Vector2(0.114706, 0.121353)
+texture = ExtResource("44_axjmv")
+
+[node name="Sprite2D29" type="Sprite2D" parent="."]
+position = Vector2(318, 570)
+scale = Vector2(0.150568, 0.135266)
+texture = ExtResource("45_1b7ac")
+
+[node name="Sprite2D30" type="Sprite2D" parent="."]
+position = Vector2(-42, 877)
+scale = Vector2(0.231481, 0.231481)
+texture = ExtResource("46_dpp6u")

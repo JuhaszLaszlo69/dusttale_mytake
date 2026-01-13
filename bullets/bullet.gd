@@ -1,6 +1,6 @@
 class_name Bullet extends Area2D
 
-@export var speed := 1000
+@export var speed := 500
 @export var damage_amount := 5 
 @export var freed_on_hit := true
 @export var shootable := false

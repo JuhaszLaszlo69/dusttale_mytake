@@ -31,4 +31,3 @@ func enter_shop():
 	Fade.fade_into_black()
 	await Fade.fade_into_black()
 	get_tree().change_scene_to_file("res://shop/shop.tscn")
-
