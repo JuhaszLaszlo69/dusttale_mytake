@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "myq+k4h88Jc=",
+  "dgSpecHash": "e5ePurRNGvI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\katona.gergo\\Documents\\UndertaleBattle-main\\UndertaleBattle-main\\UndertaleBattle.csproj",
+  "projectFilePath": "C:\\Users\\Dári Andrea\\Desktop\\dusttale_mytake\\UndertaleBattle.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\katona.gergo\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
-    "C:\\Users\\katona.gergo\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
-    "C:\\Users\\katona.gergo\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512"
+    "C:\\Users\\Dári Andrea\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
+    "C:\\Users\\Dári Andrea\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
+    "C:\\Users\\Dári Andrea\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

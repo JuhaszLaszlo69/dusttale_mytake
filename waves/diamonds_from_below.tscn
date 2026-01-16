@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://mj5bf0hhbi2k"]
 
-[ext_resource type="Script" uid="uid://b5dkwn51nt6mh" path="res://waves/diamonds_from_below.gd" id="1_3q2o1"]
+[ext_resource type="Script" uid="uid://b5dkwn51nt6mh" path="res://waves/DiamondsFromBelow.cs" id="1_3q2o1"]
 [ext_resource type="PackedScene" uid="uid://b8swhgvxqle3i" path="res://waves/wave.tscn" id="1_8gvag"]
 [ext_resource type="PackedScene" uid="uid://vy7eelm7fbgd" path="res://bullets/linear_bullet.tscn" id="3_5xn7v"]
 

@@ -88,23 +88,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\katona.gergo\\.nuget\\packages\\": {},
+    "C:\\Users\\Dári Andrea\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\katona.gergo\\Documents\\UndertaleBattle-main\\UndertaleBattle-main\\UndertaleBattle.csproj",
+      "projectUniqueName": "C:\\Users\\Dári Andrea\\Desktop\\dusttale_mytake\\UndertaleBattle.csproj",
       "projectName": "UndertaleBattle",
-      "projectPath": "C:\\Users\\katona.gergo\\Documents\\UndertaleBattle-main\\UndertaleBattle-main\\UndertaleBattle.csproj",
-      "packagesPath": "C:\\Users\\katona.gergo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\katona.gergo\\Documents\\UndertaleBattle-main\\UndertaleBattle-main\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Users\\Dári Andrea\\Desktop\\dusttale_mytake\\UndertaleBattle.csproj",
+      "packagesPath": "C:\\Users\\Dári Andrea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dári Andrea\\Desktop\\dusttale_mytake\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\katona.gergo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dári Andrea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -131,7 +131,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -169,7 +169,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

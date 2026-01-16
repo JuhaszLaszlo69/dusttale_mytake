@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ptt71q0lsxgx"]
 
 [ext_resource type="Theme" uid="uid://cf0xm6i8snote" path="res://themes/theme.tres" id="1_brvii"]
-[ext_resource type="Script" uid="uid://dfhk8db4jtrx3" path="res://text_box/button.gd" id="2_8cus2"]
+[ext_resource type="Script" uid="uid://dfhk8db4jtrx3" path="res://text_box/CustomButton.cs" id="2_8cus2"]
 [ext_resource type="AudioStream" uid="uid://bg6fcjorkrh23" path="res://sounds/snd_squeak.wav" id="3_jdx2s"]
 
 [node name="Button" type="Button"]
