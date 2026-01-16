@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://tly4ac72poq7"]
 
 [ext_resource type="Texture2D" uid="uid://ck5iwib4fr77x" path="res://sprites/red_soul.svg.png" id="1_llyy4"]
-[ext_resource type="Script" uid="uid://vm38somiibp1" path="res://soul/Soul.cs" id="1_rujom"]
+[ext_resource type="Script" uid="uid://vm38somiibp1" path="res://soul/soul.gd" id="1_rujom"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_53ixt"]
 radius = 17.5446

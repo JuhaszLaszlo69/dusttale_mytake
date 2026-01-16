@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://d3nfnvovig4f7"]
 
-[ext_resource type="Script" uid="uid://djxnjgod6ymob" path="res://bullets/FollowerBullet.cs" id="1_4btat"]
+[ext_resource type="Script" uid="uid://djxnjgod6ymob" path="res://bullets/follower_bullet.gd" id="1_4btat"]
 [ext_resource type="PackedScene" uid="uid://c6cn3s1xtkoow" path="res://bullets/bullet.tscn" id="1_78xp2"]
 [ext_resource type="Texture2D" uid="uid://cllhluuapyh2q" path="res://sprites/icon_monochrome_dark.png" id="2_4btat"]
 

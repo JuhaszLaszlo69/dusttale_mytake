@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cedvngba5pql2"]
 
-[ext_resource type="Script" uid="uid://blw4qqpmroi5d" path="res://text_box/MonsterTextBox.cs" id="1_b86qq"]
+[ext_resource type="Script" uid="uid://blw4qqpmroi5d" path="res://text_box/monster_text_box.gd" id="1_b86qq"]
 [ext_resource type="AudioStream" uid="uid://50v00xr0tl8p" path="res://sounds/SND_TXT1.wav" id="2_b86qq"]
 
 [node name="MonsterTextBox" type="RichTextLabel"]

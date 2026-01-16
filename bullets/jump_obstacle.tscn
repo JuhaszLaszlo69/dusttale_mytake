@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://mo6ifyrp7ntd"]
 
 [ext_resource type="PackedScene" uid="uid://c6cn3s1xtkoow" path="res://bullets/bullet.tscn" id="1_c7bd3"]
-[ext_resource type="Script" uid="uid://bn8ckpviwq02e" path="res://bullets/JumpObstacle.cs" id="1_cmb32"]
+[ext_resource type="Script" uid="uid://bn8ckpviwq02e" path="res://bullets/jump_obstacle.gd" id="1_cmb32"]
 
 [node name="JumpObstacle" instance=ExtResource("1_c7bd3")]
 scale = Vector2(1, 3)

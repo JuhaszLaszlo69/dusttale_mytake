@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cutscene_001"]
 
-[ext_resource type="Script" path="res://cutscenes/AllBossesDefeated.cs" id="1_cutscene"]
+[ext_resource type="Script" path="res://cutscenes/all_bosses_defeated.gd" id="1_cutscene"]
 
 [sub_resource type="Gradient" id="Gradient_particles"]
 offsets = PackedFloat32Array(0, 1)

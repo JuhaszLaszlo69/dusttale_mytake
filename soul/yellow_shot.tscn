@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c53touampkpns"]
 
-[ext_resource type="Script" uid="uid://d4k8qvgrveunc" path="res://soul/YellowShot.cs" id="1_78igh"]
+[ext_resource type="Script" uid="uid://d4k8qvgrveunc" path="res://soul/yellow_shot.gd" id="1_78igh"]
 [ext_resource type="Texture2D" uid="uid://q323cmijg11p" path="res://sprites/spr_yellowbullet_pl_5.png" id="2_q2ekm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gthao"]

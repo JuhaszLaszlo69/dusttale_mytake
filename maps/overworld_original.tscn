@@ -1,12 +1,12 @@
 [gd_scene load_steps=11 format=3 uid="uid://n60alop615ch"]
 
 [ext_resource type="Texture2D" uid="uid://ydsart1o6wwj" path="res://maps/Snowdin/Grillbys/Sprites/a_hot.png" id="1"]
-[ext_resource type="Script" uid="uid://do6kydv1fqpom" path="res://maps/OverworldOriginal.cs" id="1_735m8"]
+[ext_resource type="Script" uid="uid://do6kydv1fqpom" path="res://maps/overworld_original.gd" id="1_735m8"]
 [ext_resource type="Texture2D" uid="uid://16j66fp5bafh" path="res://maps/Snowdin/Grillbys/Sprites/barra.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://3fycnn40a6q" path="res://player/Jugador.tscn" id="3"]
-[ext_resource type="Script" uid="uid://fnj2sx0kgknw" path="res://maps/Door.cs" id="5"]
+[ext_resource type="Script" uid="uid://fnj2sx0kgknw" path="res://maps/door.gd" id="5"]
 [ext_resource type="Texture2D" uid="uid://n5nrdc0nppl4" path="res://shop/shopkeeper.png" id="7_1ohu6"]
-[ext_resource type="Script" uid="uid://d2ybodeikb7nm" path="res://shop/ShopCollision.cs" id="10_shop_collision"]
+[ext_resource type="Script" uid="uid://d2ybodeikb7nm" path="res://shop/shop_collision.gd" id="10_shop_collision"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
 size = Vector2(35, 44)

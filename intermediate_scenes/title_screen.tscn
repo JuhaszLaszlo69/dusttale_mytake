@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://cnxrqinpyif6b"]
 
-[ext_resource type="Script" uid="uid://ce81wwjperdmy" path="res://intermediate_scenes/TitleScreen.cs" id="1_k6j6k"]
+[ext_resource type="Script" uid="uid://ce81wwjperdmy" path="res://intermediate_scenes/title_screen.gd" id="1_k6j6k"]
 [ext_resource type="PackedScene" uid="uid://ycbjbgr0j33j" path="res://enemy_data/godot.tscn" id="2_s06oh"]
 [ext_resource type="PackedScene" uid="uid://bkavs6k60jki1" path="res://enemy_data/poseur.tscn" id="3_cdqcp"]
 [ext_resource type="PackedScene" uid="uid://b63wldbutwctw" path="res://enemy_data/cherry.tscn" id="4_nlcaa"]

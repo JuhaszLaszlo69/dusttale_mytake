@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://rfhmyittk3tv"]
 
-[ext_resource type="Script" uid="uid://xafcqnb747oq" path="res://shop/Shop.cs" id="1_shop"]
+[ext_resource type="Script" uid="uid://xafcqnb747oq" path="res://shop/shop.gd" id="1_shop"]
 [ext_resource type="Texture2D" uid="uid://y21vb5yok6sj" path="res://shop/shop.png" id="2_shop_bg"]
 [ext_resource type="Texture2D" uid="uid://n5nrdc0nppl4" path="res://shop/shopkeeper.png" id="3_shopkeeper"]
 [ext_resource type="StyleBox" path="res://shop/panel_style.tres" id="4_panel_style"]
